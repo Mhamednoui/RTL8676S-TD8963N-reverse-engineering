@@ -22,10 +22,18 @@ web UI, live CLI — and document everything for a possible GitHub publish.
 
 See `notes/LOG.md` for the running log and `notes/device-profile.md` for the hardware facts.
 
+## Photos
+See `photos/` for hardware + console shots: the PCB with the UART header and GD25Q32 flash
+labelled, the bench (CH341A programmer + CP2102 serial + multimeter), the RTL8676S bootloader
+`help`, and the `ADSL#` CLI. Identifying fields are masked. Captions in `photos/README.md`.
+
+![Board: UART header + GD25Q32 flash](photos/board-uart-flash.jpg)
+
 ## Folder layout
 - `notes/`      — LOG.md (session log), device-profile.md, research.md, uart-and-dumping.md, cli-reference.md, findings-from-bootlog.md
 - `analysis/`   — how the firmware/config were decompressed and analysed; the flash map; vuln review
 - `scripts/`    — helper scripts (LZMA stream extractor, hexdump→bin converters, rtl_clean.py)
+- `photos/`     — annotated hardware + console photos (captions in `photos/README.md`)
 - `SECURITY_FINDINGS.md` — redacted, educational security write-up
 
 ## What is NOT in this public repo (and why)
