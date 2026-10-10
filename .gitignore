@@ -1,0 +1,20 @@
+# Never commit raw firmware / dumps / extracted artifacts (contain secrets + vendor code)
+*.bin
+*.img
+*.rom
+*.pyz
+firmware/
+dumps/
+captures/
+analysis/extracted/
+*.fwscan/
+# raw serial / config logs
+*.log
+sw_config_decompressed*
+cli-session-raw*
+# python noise
+__pycache__/
+*.pyc
+# OS noise
+.DS_Store
+Thumbs.db
